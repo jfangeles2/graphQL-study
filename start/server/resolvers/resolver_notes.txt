@@ -1,0 +1,6 @@
+1. Each resolver should have its own file in ./resolvers
+2. The filename of each resolver should correspond to the schema that they define
+3. Access required data from database using context which should have already been handled in index.js
+4. Resolvers should only handle data that are non-scalar. It should not handle Int, String, Float, etc. An example in this project is the MainCard type from schema.js which all contains scalar type objects. We do not make a resolver for this type.
+5. arr.find(foo) terminates if foo returns true, and returns the match
+6. arr.filter(foo) terminates if the the whole array is scanned and returns all matches
